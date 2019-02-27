@@ -60,15 +60,15 @@ namespace GodVanishPlus {
                         if (Configuration.Instance.StaffGroups.Contains(pGroup.Id)) {
                             if (killer.Features.GodMode) {
                                 UnturnedChat.Say(player.DisplayName + " was killed by: " + killer.DisplayName + ". They were in: God Mode!");
-                                File.AppendAllText(path, DateTime.Now.ToString() + "[##GOD ABUSE##]" + player.DisplayName + " was killed by " + killer.DisplayName + "ID:" + killer.CSteamID + "." + System.Environment.NewLine);
+                                File.AppendAllText(path, DateTime.Now.ToString() + "[##GOD ABUSE##]" + player.DisplayName + " was killed by " + killer.DisplayName + " ID: " + killer.CSteamID + "." + System.Environment.NewLine);
                                 return;
                             } else if (killer.Features.VanishMode) {
                                 UnturnedChat.Say(player.DisplayName + " was killed by: " + killer.DisplayName + ". They were in: Vanish Mode!");
-                                File.AppendAllText(path, DateTime.Now.ToString() + "[##VANISH ABUSE##]" + player.DisplayName + " was killed by " + killer.DisplayName + "ID:" + killer.CSteamID + "." + System.Environment.NewLine);
+                                File.AppendAllText(path, DateTime.Now.ToString() + "[##VANISH ABUSE##]" + player.DisplayName + " was killed by " + killer.DisplayName + " ID: " + killer.CSteamID + "." + System.Environment.NewLine);
                                 return;
                             } else if (killer.Features.GodMode && killer.Features.VanishMode) {
                                 UnturnedChat.Say(player.DisplayName + " was killed by: " + killer.DisplayName + ". They were in: God Mode and Vanish Mode!");
-                                File.AppendAllText(path, DateTime.Now.ToString() + "[##GOD AND VANISH ABUSE##]" + player.DisplayName + " was killed by " + killer.DisplayName + "ID:" + killer.CSteamID + "." + System.Environment.NewLine);
+                                File.AppendAllText(path, DateTime.Now.ToString() + "[##GOD AND VANISH ABUSE##]" + player.DisplayName + " was killed by " + killer.DisplayName + " ID: " + killer.CSteamID + "." + System.Environment.NewLine);
                                 return;
                             } else {
                                 return;
