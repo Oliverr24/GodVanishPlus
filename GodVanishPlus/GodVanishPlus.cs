@@ -35,7 +35,7 @@ namespace GodVanishPlus {
                 base.UnloadPlugin();
             }
 
-            Rocket.Core.Logging.Logger.Log("GodVanishPlus has loaded!");
+            Rocket.Core.Logging.Logger.Log("GodVanishPlus by Oliverr24, has been loaded! Plugin Version: " + Assembly.GetName().Version));
         }
 
         protected override void Unload() {
