@@ -1,4 +1,5 @@
-﻿using Rocket.API.Serialisation;
+﻿using Rocket.API;
+using Rocket.API.Serialisation;
 using Rocket.Core;
 using Rocket.Core.Plugins;
 using Rocket.Unturned;
@@ -46,6 +47,28 @@ namespace GodVanishPlus {
 
         private void FixedUpdate() {
 
+        }
+
+        int frames = 0;
+        private void Update() {
+            frames++;
+
+            if (frames > 60) {
+                if (Provider.clients.Count > 0) {
+                    foreach(SteamPlayer sPlayer in Provider.clients) {
+                        UnturnedPlayer player = UnturnedPlayer.FromSteamPlayer(sPlayer);
+                        if (!(player.HasPermission("godvanishplus.dequip"))) {
+                            return;
+
+                        }else if (player.Features.GodMode || player.Features.VanishMode) {
+                            if (player.Player.equipment.isEquipped) {
+                                player.Player.equipment.dequip();
+                                frames = 0;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private void OnPlayerDeath(UnturnedPlayer player, EDeathCause cause, ELimb limb, CSteamID murderer) {
