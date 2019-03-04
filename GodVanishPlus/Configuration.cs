@@ -1,14 +1,12 @@
 ﻿using Rocket.API;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace GodVanishPlus {
     public class Configuration : IRocketPluginConfiguration {
 
         public bool Enabled;
         public bool ChatAnnounce;
+        public bool BanEquip;
         public string ChatColor;
         public string vanishColorOn;
         public string godColorOn;
@@ -38,6 +36,7 @@ namespace GodVanishPlus {
         public void LoadDefaults() {
             Enabled = true;
             ChatAnnounce = true;
+            BanEquip = true;
             ChatColor = "yellow";
             godColorOn = "Cyan";
             vanishColorOn = "Cyan";
