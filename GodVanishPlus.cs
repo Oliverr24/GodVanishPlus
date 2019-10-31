@@ -2,7 +2,6 @@
 using Rocket.API.Serialisation;
 using Rocket.Core;
 using Rocket.Core.Plugins;
-using Rocket.Unturned;
 using Rocket.Unturned.Chat;
 using Rocket.Unturned.Events;
 using Rocket.Unturned.Player;
@@ -45,12 +44,8 @@ namespace GodVanishPlus {
             Rocket.Core.Logging.Logger.Log("GodVanishPlus has unloaded!");
         }
 
-        private void FixedUpdate() {
-
-        }
-
         int frames = 0;
-        private void Update() {
+        public void FixedUpdate() {
             frames++;
 
             if (frames > 60) {
@@ -73,7 +68,7 @@ namespace GodVanishPlus {
 
         private void OnPlayerDeath(UnturnedPlayer player, EDeathCause cause, ELimb limb, CSteamID murderer) {
             string path = directory;
-            List<string> Staff = new List<string>(Configuration.Instance.StaffGroups);
+            _ = new List<string>(Configuration.Instance.StaffGroups);
 
 
             if (!(player is UnturnedPlayer)) {

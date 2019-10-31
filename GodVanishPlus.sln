@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodVanishPlus", "GodVanishPlus\GodVanishPlus.csproj", "{550F5B00-1F56-4FC3-AE72-9F09DC630C5A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodVanishPlus", "GodVanishPlus.csproj", "{550F5B00-1F56-4FC3-AE72-9F09DC630C5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {32CDF6B3-DB61-4607-ABB0-9E7D75ACC5AE}
+		SolutionGuid = {D496D343-672D-4A35-AB6E-8D103F72FF9B}
 	EndGlobalSection
 EndGlobal
