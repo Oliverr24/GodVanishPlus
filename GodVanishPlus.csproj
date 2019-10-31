@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GodVanishPlus</RootNamespace>
     <AssemblyName>GodVanishPlus</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -32,19 +32,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\Unturned\Developing\Assembly-CSharp.dll</HintPath>
+      <HintPath>lib\Assembly-CSharp.dll</HintPath>
+	  <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\Unturned\Developing\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>lib\Assembly-CSharp-firstpass.dll</HintPath>
+	  <Private>False</Private>
     </Reference>
     <Reference Include="Rocket.API">
-      <HintPath>..\..\..\Unturned\Developing\Rocket.API.dll</HintPath>
+      <HintPath>lib\Rocket.API.dll</HintPath>
+	  <Private>False</Private>
     </Reference>
     <Reference Include="Rocket.Core">
-      <HintPath>..\..\..\Unturned\Developing\Rocket.Core.dll</HintPath>
+      <HintPath>lib\Rocket.Core.dll</HintPath>
+	  <Private>False</Private>
     </Reference>
     <Reference Include="Rocket.Unturned">
-      <HintPath>..\..\..\Unturned\Developing\Rocket.Unturned.dll</HintPath>
+      <HintPath>lib\Rocket.Unturned.dll</HintPath>
+	  <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,10 +58,12 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\Unturned\Developing\UnityEngine.dll</HintPath>
+      <HintPath>lib\UnityEngine.dll</HintPath>
+	  <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\Unturned\Developing\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>lib\UnityEngine.CoreModule.dll</HintPath>
+	  <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
